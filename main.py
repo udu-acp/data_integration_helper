@@ -20,7 +20,8 @@ def normalize_columns(file_path, output_file):
     with open(output_file, 'w+') as f:
 
         for column in data_without_spaces:
-            print(column, file=f)
+            # print each column in uppercase
+            print(column.upper(), file=f)
 
     
 normalize_columns("columns.txt", "columns_normalized.txt")
