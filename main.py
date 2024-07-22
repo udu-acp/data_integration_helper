@@ -16,9 +16,7 @@ def normalize_columns(file_path, output_file):
     for column in data_into_list:
         data_without_spaces.append(column.strip().replace(' ', '_').replace('/', '_'))
 
-    # open the file to both read and write
-    # read to truncate the file
-    # write to add new 
+    # read columns to new file
     with open(output_file, 'w+') as f:
 
         for column in data_without_spaces:
