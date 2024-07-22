@@ -12,7 +12,7 @@ def normalize_columns(file_path, output_file):
     data_without_spaces = []
 
     # remove trailing ' ' in list elements then
-    # replace remaining spaces with '_'
+    # replace remaining ' ' and '/' with '_'
     for column in data_into_list:
         data_without_spaces.append(column.strip().replace(' ', '_').replace('/', '_'))
 
