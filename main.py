@@ -14,7 +14,7 @@ def normalize_columns(file_path, output_file):
     # remove trailing ' ' in list elements then
     # replace remaining spaces with '_'
     for column in data_into_list:
-        data_without_spaces.append(column.strip().replace(' ', '_'))
+        data_without_spaces.append(column.strip().replace(' ', '_').replace('/', '_'))
 
     # open the file to both read and write
     # read to truncate the file
@@ -23,6 +23,6 @@ def normalize_columns(file_path, output_file):
 
         for column in data_without_spaces:
             print(column, file=f)
-        
+
     
 normalize_columns("columns.txt", "columns_normalized.txt")
