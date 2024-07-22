@@ -2,13 +2,16 @@ Company Code
 Worked In Department
 Worked In Department Description
 Gross Pay
-Net Pay	Take Home	
+Net Pay
+Take Home	
 Regular Earnings Total
-Regular Hours Total	Overtime Earnings Total	Overtime Hours Total	
+Regular Hours Total	
+Overtime Earnings Total	
+Overtime Hours Total	
 AJJ_ADJUSTMENT_Earnings
 BER_BEREAVEMENT_Earnings
-BON_BONUS_EarningsC19_C19Sick 
-Leave_Earnings	
+BON_BONUS_Earnings
+C19_C19Sick Leave_Earnings	
 CLN_Call-In_Earnings	
 COM_COMMISSION_Earnings	
 FLO_FLOAT HOLIDAY_Earnings	
@@ -44,8 +47,7 @@ BER_BEREAVEMENT_Hours
 BON_BONUS_Hours	
 C19_C19Sick Leave_Hours	
 COM_COMMISSION_Hours	
-FLO_FLOAT 
-HOLIDAY_Hours	
+FLO_FLOAT HOLIDAY_Hours	
 HD2_HwkdyEOT_Hours	
 HOL_HOLIDAY_Hours	
 HWE_HolWkdayEve_Hours	
