@@ -30,4 +30,4 @@ def normalize_columns(input_file, output_file):
             print(column.upper(), file=f)
 
     
-normalize_columns("columns.txt", "columns_normalized.txt")
+normalize_columns("input_columns.txt", "columns_normalized.txt")
