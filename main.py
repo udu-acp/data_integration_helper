@@ -1,12 +1,18 @@
-def normalize_columns(file_path, output_file):
+def normalize_columns(input_file, output_file):
     # access the txt file with columns listed
-    columns_file = open(file_path, 'r')
+    columns_file = open(input_file, 'r')
 
     # read the file into variable
     data = columns_file.read()
 
-    # replace any tabs with '' and split the text by newlines 
-    data_into_list = data.replace('\t', '').split('\n')
+    ### add any additional characters that need to replaced here
+    # replace any tabs with newlines
+    # replace % with pct
+    # replace - with _
+    data = data.replace('\t', '\n').replace('%', 'pct').replace('-', '_')
+
+    # then split the text by newlines 
+    data_into_list = data.split('\n')
 
     # create list to hold updated columns
     data_without_spaces = []
