@@ -1,6 +1,13 @@
 # data_integration_helper
 
+### This repo is a work-in-progress. As I find myself performing redundant/arduous tasks, I'll develop functions to expedite the process. The goal is to perpetually optimize for efficiency.
 
-### This snippet was created to expedite column normalization for use in Matillion DPC/ETL (or any other ETL tool with a create table component). I found myself having to remove spaces, hyphens, etc. as well as manually adding new lines when grabbing columns from any sort of CSV response/file. 
+#### normalize_columns:
+The normalize_columns function was created to simplify column normalization for use in Matillion DPC/ETL or any other ETL tool with a table creation component. It helps remove spaces, hyphens, and other unwanted characters, and it automates the addition of new lines when processing columns from CSV files.
 
-To use, add your own input and output column txt files, make sure the function arguments match your new names, add tab seperated columns into your input file (copy header from csv file to input text file), add any additional replace statements as needed, RUN, and grab your columns from the output file!
+Usage Instructions: 
+1. Add your input and output column text files.
+2. Ensure that the function arguments correspond to your new file names.
+3. Insert tab-separated columns into your input file (you can copy the header from your CSV file to the input text file).
+4. Add any additional replace statements as needed.
+5. Run the function and retrieve your columns from the output file.
