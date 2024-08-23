@@ -1,2 +1,5 @@
+extracted_aliases.txt
 columns_normalized.txt
 input_columns.txt
+extracted_tables.txt
+__pycache__/extractors.cpython-312.pyc
