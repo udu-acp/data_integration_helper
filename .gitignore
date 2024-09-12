@@ -9,3 +9,4 @@ extracted_counts.txt
 
 # others
 __pycache__/extractors.cpython-312.pyc
+.venv/
