@@ -1,5 +1,12 @@
-extracted_aliases.txt
-columns_normalized.txt
+#  input files
 input_columns.txt
+
+# output files
+columns_normalized.txt
+extracted_aliases.txt
 extracted_tables.txt
+extracted_counts.txt
+
+# others
 __pycache__/extractors.cpython-312.pyc
+.venv/

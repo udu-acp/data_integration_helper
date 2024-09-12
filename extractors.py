@@ -1,3 +1,5 @@
+import numpy as np
+
 def normalize_columns(input_file, output_file):
     # access the txt file with columns listed
     columns_file = open(input_file, 'r')
@@ -83,3 +85,38 @@ def table_extractor(input_file, output_file):
     with open(output_file, 'w+') as f:
         for column in tables:
             print(column.title(), file=f)
+
+
+def counts(list, string):
+    # loop through elements in a list and count their occurances
+    count = 0
+    for element in list:
+        if element == string:
+            count += 1
+    return count
+
+def column_counter(input_file, output_file):
+    # read file and enforce uniformity into a list
+    data = open(input_file, 'r+')
+    data = data.read()
+    columns_cleaned = data.replace('"', '').replace(',', '').strip()
+    columns_list = columns_cleaned.lower().replace(' ', '_').split('\n')
+
+    # write out the columns and their use counts
+    with open(output_file, 'w+') as f:
+        for column in columns_list:
+            column = column.split(".")[-1]
+            print(f"{column}, {counts(columns_list, column)}", file=f)
+
+    # remove duplicate column names and counts. then store in list
+    counts_data = open(output_file, 'r+')
+    counts_data = counts_data.read()
+    counts_list = counts_data.strip().split('\n')
+    unique_list = np.unique(counts_list)
+
+    # loop through list and print
+    with open(output_file, 'w+') as f:
+        print("column_name, count", file=f)
+        for record in unique_list:
+            print(record, file=f)
+
