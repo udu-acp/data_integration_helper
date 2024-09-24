@@ -8,6 +8,6 @@ extracted_tables.txt
 extracted_counts.txt
 
 # others
-__pycache__/extractors.cpython-312.pyc
+__pycache__/
 .venv/
 .env
