@@ -9,7 +9,7 @@ class ExtractionGenerator:
         openai.api_base = os.getenv("AZURE_OPENAI_ENDPOINT")
         openai.api_type = 'azure'
         openai.api_version = '2023-05-15'
-        self.deployment_name = 'AI_AmplifyCP_GPT4o'
+        self.deployment_name = os.getenv("DEPLOYMENT_NAME")
 
     def review_columns(self, input_file):
         with open(input_file, 'r') as f:
